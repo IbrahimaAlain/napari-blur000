@@ -67,7 +67,8 @@ class ImageBlurWidget(Container):
 
         if self.apply_blur_checkbox.value:
             sigma = self.sigma_slider.value
-            img = gaussian_filter(img, sigma=sigma)
+            #img = gaussian_filter(img, sigma=sigma)
+            img = img / 2
 
         name = img_layer.name + "_flou"
         if name in self.viewer.layers:
