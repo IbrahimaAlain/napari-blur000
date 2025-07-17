@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-blur000 = napari_blur000:napari.yaml
